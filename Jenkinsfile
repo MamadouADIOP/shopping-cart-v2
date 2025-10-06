@@ -4,7 +4,7 @@ pipeline {
         booleanParam(name: "RUN_INTEGRATION_TESTS ", defaultValue: true)
     }
     stages { 
-        stage('Install Dependencies) {
+        stage('Install Dependencies') {
             steps { sh './mvnw clean install' }
         }
         stage('Test') {
