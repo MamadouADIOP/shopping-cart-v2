@@ -20,7 +20,7 @@ pipeline {
                     }
 
                     steps {
-		    wsl sh './mvnw test -D testGroups=integration'
+		    sh './mvnw test -D testGroups=integration'
 		    }
                 }
 		  stage('Build') {
@@ -28,7 +28,7 @@ pipeline {
                       steps {
 		      script{
 		      try{
-                      wsl sh './mvnw package -D skipTests'
+                      sh './mvnw package -D skipTests'
                      }
 		     catch(ex){
 		      echo "Error while generating JAR file"
