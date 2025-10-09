@@ -1,0 +1,38 @@
+Summary
+In this chapter, you learned:
+
+A pipeline is a series of connected steps executed in sequence to accomplish a task.
+
+A step is a single task to perform inside a project, and stages are groups of steps.
+
+A project in Jenkins describes an executable workflow, and a build is the result of a pipeline execution.
+
+Declarative pipelines have a strict and predefined structure.
+
+Scripted pipelines have a flexible structure, and they are written in Groovy.
+
+You can define scripted blocks inside declarative pipelines.
+
+Jenkins has three types of stage executions: sequential, parallel, and matrix.
+
+You can control the step execution by using parameters, checkpoints, and conditionals.
+EOD
+Summary
+In this chapter, you learned:
+
+A pipeline is a series of connected steps executed in sequence to accomplish a task.
+
+A step is a single task to perform inside a project, and stages are groups of steps.
+
+A project in Jenkins describes an executable workflow, and a build is the result of a pipeline execution.
+
+Declarative pipelines have a strict and predefined structure.
+
+Scripted pipelines have a flexible structure, and they are written in Groovy.
+
+You can define scripted blocks inside declarative pipelines.
+
+Jenkins has three types of stage executions: sequential, parallel, and matrix.
+
+You can control the step execution by using parameters, checkpoints, and conditionals.
+EOD
