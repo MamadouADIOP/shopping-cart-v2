@@ -23,7 +23,10 @@ pipeline {
 		    sh './mvnw test -D testGroups=integration'
 		    }
                 }
-		  stage('Build') {
+	
+            }
+        }
+			  stage('Build') {
 
                       steps {
 		      script{
@@ -37,7 +40,5 @@ pipeline {
 		     }
 		     }
                   }
-            }
-        }
     }
 }
