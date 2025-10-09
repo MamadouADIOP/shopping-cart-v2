@@ -10,7 +10,7 @@ pipeline {
             parallel { 
                 stage('Unit tests') {
                     steps { 
-		    wsl sh './mvnw test -D testGroups=unit'
+		    sh './mvnw test -D testGroups=unit'
 		    }
                 }
 
