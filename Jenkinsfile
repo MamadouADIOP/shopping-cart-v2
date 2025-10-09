@@ -10,7 +10,7 @@ pipeline {
             parallel { 
                 stage('Unit tests') {
                     steps { 
-		    sh './mvnw test -D testGroups=unit'
+		    wsl sh './mvnw test -D testGroups=unit'
 		    }
                 }
 
@@ -20,7 +20,7 @@ pipeline {
                     }
 
                     steps {
-		    sh './mvnw test -D testGroups=integration'
+		    wsl sh './mvnw test -D testGroups=integration'
 		    }
                 }
 		  stage('Build') {
@@ -28,7 +28,7 @@ pipeline {
                       steps {
 		      script{
 		      try{
-                      sh './mvnw package -D skipTests'
+                      wsl sh './mvnw package -D skipTests'
                      }
 		     catch(ex){
 		      echo "Error while generating JAR file"
